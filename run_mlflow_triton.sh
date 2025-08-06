@@ -1,6 +1,6 @@
 #!/bin/bash
 # genai1234!%40#$'@10.50.62.159:20159/mlflow
-export MLFLOW_DB_URI="postgresql+psycopg2://genai:'genai1234%21%40%23%24'@10.50.62.159:20159/mlflow"
+export MLFLOW_DB_URI="postgresql+psycopg2://genai:'genai1234!@#$'@10.50.62.159:20159/mlflow"
 
 #ROOT_PATH=/aiops
 ROOT_PATH="$(cd "$(dirname "$0")" && pwd)"
