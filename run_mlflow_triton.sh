@@ -16,8 +16,10 @@ docker run -it -p 8894:5000 --rm \
 -v $ROOT_PATH/artifacts/models:/mlflow/artifacts \
 --name mlflow-triton \
 spansite/aiops:mlflow-triton_v2 \
+bash -c "\
 mlflow server \
   --host 0.0.0.0 \
   --port 5000 \
   --backend-store-uri postgresql+psycopg2://genai:'genai1234!%40#$'@10.50.62.159:20159/mlflow \
-  --default-artifact-root /mlflow/artifacts
+  --default-artifact-root /mlflow/artifacts & \
+exec bash"
