@@ -13,7 +13,6 @@ docker run -it -p 8894:5000 --rm \
 --shm-size=16G --restart always \
 -v $ROOT_PATH/mlflow/scripts:/mlflow/scripts \
 -v $ROOT_PATH/mlflow/logs:/mlflow/logs \
-#-v $ROOT_PATH/mlflow/db:/mlflow/db \     <- 외부 pgsql을 사용하므로 불필요
 -v $ROOT_PATH/artifacts/models:/mlflow/artifacts \
 --name mlflow-triton \
 spansite/aiops:mlflow-triton_v2 \
