@@ -10,7 +10,7 @@ echo "이 스크립트가 위치한 Dir : $ROOT_PATH"
 #   - postgresql+psycopg2://'db 유저 id':'db 비번'@'db 호스트':'db 포트번호'/'데이터 저장할 db이름'
 # 2. /artifacts/models 는 실제 서버의 디렉토리이며 대규모 아티팩트 저장을 위해 NAS로 연결되었음. 여기에 컨테이너의 /mlflow/artifacts 를 마운트하였음 
 docker run -it -p 8894:5000 --rm \
---shm-size=16G --restart always \
+--shm-size=16G \
 -v $ROOT_PATH/mlflow/scripts:/mlflow/scripts \
 -v $ROOT_PATH/mlflow/logs:/mlflow/logs \
 -v $ROOT_PATH/artifacts/models:/mlflow/artifacts \
