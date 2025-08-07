@@ -15,6 +15,7 @@ docker rm $CONTAINER_NAME 2>/dev/null
 
 # 2. 재시작
 echo "컨테이너를 재시작합니다.: $CONTAINER_NAME"
+# 백그라운드 실행 : docker run -d -p 8894:5000 --restart always \
 docker run -it -p 8894:5000 --rm \
   --env MLFLOW_DB_URI=$MLFLOW_DB_URI \
   --shm-size=16G \
