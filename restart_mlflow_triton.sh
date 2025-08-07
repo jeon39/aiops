@@ -2,11 +2,11 @@
 
 # 환경 변수 설정
 export MLFLOW_DB_URI="postgresql+psycopg2://genai:genai1234%21%40%23%24@10.50.62.159:20159/mlflow"
-export ROOT_PATH="/your/root/path"  # 필요 시 절대경로로 수정
+export ROOT_PATH="$(cd "$(dirname "$0")" && pwd)"
+echo "이 스크립트가 위치한 Dir : $ROOT_PATH"
 
 # 컨테이너 이름
-ROOT_PATH="$(cd "$(dirname "$0")" && pwd)"
-echo "이 스크립트가 위치한 Dir : $ROOT_PATH"
+CONTAINER_NAME="mlflow-triton"
 
 # 1. 기존 컨테이너 중지 및 제거
 echo "컨테이너를 중지합니다. : $CONTAINER_NAME"
