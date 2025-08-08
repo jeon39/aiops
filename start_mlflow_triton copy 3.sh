@@ -26,6 +26,5 @@ mlflow server \
   --host 0.0.0.0 \
   --port 5000 \
   --backend-store-uri \$MLFLOW_DB_URI \
-  --artifacts-destination /mlflow/artifacts \
-  --serve-artifacts & \
+  --default-artifact-root /mlflow/artifacts & \
 exec bash"

@@ -1,0 +1,8 @@
+{
+    "docker": {
+      "volumes": [
+        "C:\\\\dev\\\\conda\\\\aiops\\\\pipelines\\\\test-train-project:/app"
+      ]
+    }
+  }
+  
