@@ -19,6 +19,7 @@ docker run -it -p 8894:5000 --rm \
 -v $ROOT_PATH/mlflow/scripts:/mlflow/scripts \
 -v $ROOT_PATH/mlflow/logs:/mlflow/logs \
 -v /artifacts/models:/mlflow/artifacts \
+--user 1002:1002 \
 --name mlflow-triton \
 spansite/aiops:mlflow-triton_v2 \
 bash -c "\

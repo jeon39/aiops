@@ -11,4 +11,4 @@ $env:MLFLOW_TRACKING_URI = "http://10.50.62.185:8894"
 $env:PYTHONUTF8 = 1
 
 # 4. MLflow run (Experiment, Run Name  지정)
-mlflow run . --experiment-name "seongj" --run-name "random-forest-v6"
+mlflow run . --experiment-name "seongj-1" --run-name "random-forest-v2"
