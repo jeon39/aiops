@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 환경 변수 설정
-export MLFLOW_DB_URI="postgresql+psycopg2://genai:genai1234%21%40%23%24@10.50.62.159:20159/mlflow"
+export MLFLOW_DB_URI="postgresql+psycopg2://[ID]:[PWD]@[PGSql Server IP]:[Port]/[DB Name]"
 export ROOT_PATH="$(cd "$(dirname "$0")" && pwd)"
 echo "이 스크립트가 위치한 Dir : $ROOT_PATH"
 
