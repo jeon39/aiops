@@ -1,7 +1,6 @@
 #!/bin/bash
-# PGSql : postgresql+psycopg2://genai:genai1234!%40#$'@10.50.62.159:20159/mlflow 추가
 # Sqllit :  -v $ROOT_PATH/mlflow/db 를 추가한 후, sqlite:////mlflow/db/mlflow.db를 추가
-export MLFLOW_DB_URI="postgresql+psycopg2://genai:genai1234%21%40%23%24@10.50.62.159:20159/mlflow"
+export MLFLOW_DB_URI="postgresql+psycopg2://[ID]:[PWD]@[PGSql Server IP]:[Port]/[DB Name]"
 
 #ROOT_PATH=/aiops <- 스크립스 시작 위치
 ROOT_PATH="$(cd "$(dirname "$0")" && pwd)"
