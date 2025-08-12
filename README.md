@@ -110,3 +110,6 @@ experiments/1854/d7fc3df276664852be95ee6bc0d14272/model/MLmodel
 
 ## 📜 라이선스
 MIT License
+
+## 📜 블로그
+겨울나기 바캉스 : https://jarikki.tistory.com/
