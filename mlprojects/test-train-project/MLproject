@@ -2,7 +2,7 @@ name: iris-classifier-docker
 
 docker_env:
   image: iris-classifier-image
-  volumes: ["C:\\dev\\conda\\aiops\\pipelines\\test-train-project:/app"]
+  volumes: ["C:\\dev\\conda\\aiops\\mlprojects\\test-train-project:/app"]
   environment: ["MLFLOW_TRACKING_URI"]
 
 entry_points:
